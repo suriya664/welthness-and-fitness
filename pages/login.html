@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - AyuraWell</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+</head>
+<body>
+  <div class="preloader"><div class="spinner"></div></div>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Ayura<span>Well</span></a>
+        <div><a href="register.html" class="btn btn-secondary btn-rounded">Register</a></div>
+      </nav>
+    </div>
+  </header>
+  <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+
+  <section class="section" style="min-height:100vh;display:flex;align-items:center;padding-top:100px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="contact-form">
+            <h2 class="text-center mb-4">Login to Your Account</h2>
+            <form id="login-form">
+              <div class="form-group">
+                <label for="login-email">Email Address *</label>
+                <input type="email" id="login-email" name="email" class="form-control" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password *</label>
+                <input type="password" id="login-password" name="password" class="form-control" placeholder="Enter your password" required>
+              </div>
+              <div class="form-group" style="display:flex;justify-content:space-between;align-items:center;">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary btn-rounded w-100">
+                <i class="fas fa-sign-in-alt"></i> Login
+              </button>
+              <p class="text-center mt-3">Don't have an account? <a href="register.html">Register here</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding:2rem 0;">
+        <p>&copy; 2025 AyuraWell. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+</body>
+</html>
+

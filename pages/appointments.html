@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment at AyuraWell - Easy online booking for Ayurveda, Yoga, Physiotherapy and wellness consultations.">
+  <title>Book Appointment - AyuraWell Health & Wellness Center</title>
+  
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+</head>
+<body>
+
+  <div class="preloader"><div class="spinner"></div></div>
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Ayura<span>Well</span></a>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointments.html" class="btn btn-primary btn-rounded active">Book Appointment</a></li>
+        </ul>
+        <div class="nav-toggle"><span></span><span></span><span></span></div>
+      </nav>
+    </div>
+  </header>
+
+  <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+
+  <section class="section" style="padding-top: 150px; min-height: 80vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="contact-form" data-aos="fade-up">
+            <form id="appointment-form" class="needs-validation" novalidate>
+              
+              <h5 class="mb-3"><i class="fas fa-user"></i> Personal Information</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="patient-name">Full Name *</label>
+                    <input type="text" id="patient-name" name="name" class="form-control" placeholder="Enter your full name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="patient-email">Email Address *</label>
+                    <input type="email" id="patient-email" name="email" class="form-control" placeholder="your@email.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="patient-phone">Phone Number *</label>
+                    <input type="tel" id="patient-phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="patient-age">Age *</label>
+                    <input type="number" id="patient-age" name="age" class="form-control" placeholder="Age" min="1" max="120" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="patient-gender">Gender *</label>
+                <select id="patient-gender" name="gender" class="form-control" required>
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                  <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+              </div>
+
+              <hr class="my-4">
+
+              <h5 class="mb-3"><i class="fas fa-stethoscope"></i> Appointment Details</h5>
+              
+              <div class="form-group">
+                <label for="department-select">Select Department *</label>
+                <select id="department-select" name="department" class="form-control" required>
+                  <option value="">Choose a department</option>
+                  <option value="ayurveda">Ayurveda Treatment</option>
+                  <option value="panchakarma">Panchakarma Therapy</option>
+                  <option value="yoga">Yoga & Meditation</option>
+                  <option value="physiotherapy">Physiotherapy</option>
+                  <option value="nutrition">Nutrition Counseling</option>
+                  <option value="spa">Spa & Massage</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="doctor-select">Preferred Doctor</label>
+                <select id="doctor-select" name="doctor" class="form-control">
+                  <option value="">Any available doctor</option>
+                  <option value="dr-meera-sharma">Dr. Meera Sharma - Ayurvedic Specialist</option>
+                  <option value="dr-raj-patel">Dr. Raj Patel - Physiotherapist</option>
+                  <option value="dr-priya-kumar">Dr. Priya Kumar - Yoga Therapist</option>
+                  <option value="dr-amit-singh">Dr. Amit Singh - Nutritionist</option>
+                  <option value="dr-sneha-reddy">Dr. Sneha Reddy - Panchakarma Expert</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="appointment-date">Preferred Date *</label>
+                    <input type="date" id="appointment-date" name="date" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="appointment-time">Preferred Time *</label>
+                    <select id="appointment-time" name="time" class="form-control" required>
+                      <option value="">Select time</option>
+                      <option value="09:00">09:00 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="12:00">12:00 PM</option>
+                      <option value="14:00">02:00 PM</option>
+                      <option value="15:00">03:00 PM</option>
+                      <option value="16:00">04:00 PM</option>
+                      <option value="17:00">05:00 PM</option>
+                      <option value="18:00">06:00 PM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-type">Consultation Type *</label>
+                <select id="appointment-type" name="consultation_type" class="form-control" required>
+                  <option value="">Select type</option>
+                  <option value="first-time">First Time Visit</option>
+                  <option value="follow-up">Follow-up Visit</option>
+                  <option value="emergency">Emergency</option>
+                  <option value="online">Online Consultation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="appointment-reason">Reason for Visit *</label>
+                <textarea id="appointment-reason" name="reason" class="form-control" rows="4" placeholder="Please describe your health concerns or reason for consultation" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="medical-history">Medical History (Optional)</label>
+                <textarea id="medical-history" name="medical_history" class="form-control" rows="3" placeholder="Any existing medical conditions, allergies, or medications"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="terms" required>
+                  I agree to the <a href="privacy-policy.html" target="_blank">Terms & Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" name="reminders">
+                  Send me appointment reminders via SMS and Email
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-rounded w-100 mt-3">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </button>
+
+              <p class="text-center mt-3 text-muted">
+                <i class="fas fa-info-circle"></i> You will receive a confirmation email within 24 hours
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div style="background: var(--bg-accent); padding: 3rem; border-radius: var(--radius-lg); height: 100%;" data-aos="fade-left">
+            <h2 style="color: var(--secondary-color); margin-bottom: 2rem;">Why Book With Us?</h2>
+            <div style="margin-bottom: 2rem;">
+              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">Easy Scheduling</h4>
+                  <p style="margin-bottom: 0; color: var(--text-light);">Book online 24/7 at your convenience</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                  <i class="fas fa-bell"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">Smart Reminders</h4>
+                  <p style="margin-bottom: 0; color: var(--text-light);">Get SMS & email reminders before your appointment</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: start; margin-bottom: 1.5rem;">
+                <div style="background: var(--primary-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                  <i class="fas fa-user-md"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">Choose Your Doctor</h4>
+                  <p style="margin-bottom: 0; color: var(--text-light);">Select your preferred specialist and time slot</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: start;">
+                <div style="background: var(--primary-color); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                  <i class="fas fa-video"></i>
+                </div>
+                <div>
+                  <h4 style="margin-bottom: 0.5rem;">Online Consultation</h4>
+                  <p style="margin-bottom: 0; color: var(--text-light);">Video consultation available for your comfort</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+
+</body>
+</html>
+

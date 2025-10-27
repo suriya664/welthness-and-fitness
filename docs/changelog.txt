@@ -1,0 +1,93 @@
+==================================
+AYURAWELL - CHANGELOG
+==================================
+
+Version 1.0.0 (October 14, 2025)
+---------------------------------
+Initial Release
+
+NEW FEATURES:
+✓ Complete HTML5 template structure
+✓ 16+ pre-built pages
+✓ Fully responsive design (mobile, tablet, desktop)
+✓ Dark mode with toggle functionality
+✓ RTL support for Arabic & Hindi
+✓ Bootstrap 5 integration
+✓ AJAX-powered forms
+✓ Appointment booking system
+✓ Interactive modals
+✓ Smooth scroll animations (AOS)
+✓ Owl Carousel for testimonials & galleries
+✓ Doctor profile cards with social links
+✓ Service showcase sections
+✓ Pricing tables
+✓ Blog layouts
+✓ Contact form with validation
+✓ User dashboard interface
+✓ Login & registration pages
+✓ 404 error page
+✓ Privacy policy page
+✓ Sticky navigation header
+✓ Back to top button
+✓ Preloader animation
+✓ Image lazy loading
+✓ Toast notifications
+✓ SEO optimized structure
+✓ Accessibility features (ARIA labels)
+✓ Cross-browser compatibility
+✓ Font Awesome 6 icons
+✓ Google Fonts integration (Poppins, Lato)
+✓ Indian context content & pricing
+✓ Comprehensive documentation
+
+PAGES INCLUDED:
+- index.html (Homepage)
+- about.html (About Us)
+- services.html (Services Listing)
+- doctors.html (Doctors Profiles)
+- appointments.html (Book Appointment)
+- departments.html (Departments)
+- pricing.html (Pricing Tables)
+- gallery.html (Image Gallery)
+- testimonials.html (Patient Reviews)
+- blog.html (Blog Listing)
+- blog-details.html (Blog Post)
+- contact.html (Contact Page)
+- login.html (User Login)
+- register.html (User Registration)
+- dashboard.html (User Dashboard)
+- 404.html (Error Page)
+- privacy-policy.html (Privacy Policy)
+
+ASSETS:
+- 4 CSS files (style, responsive, dark, rtl)
+- 3 JavaScript files (main, plugins, ajax)
+- Reusable HTML partials (header, footer, modals, sidebar, preloader)
+- Complete documentation
+- README.md with setup instructions
+
+BROWSER SUPPORT:
+- Chrome (Latest)
+- Firefox (Latest)
+- Safari (Latest)
+- Edge (Latest)
+- Opera (Latest)
+
+KNOWN ISSUES:
+- None
+
+UPCOMING IN v1.1.0:
+- Additional page templates
+- More color schemes
+- Enhanced animations
+- Multi-language support
+- Backend integration examples
+- More gallery layouts
+
+==================================
+
+For support: contact@ayurawell.in
+Website: www.ayurawell.in
+
+==================================
+

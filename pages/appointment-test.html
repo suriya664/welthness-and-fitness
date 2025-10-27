@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Booking Test - AyuraWell</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --secondary: #2E7D32;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .test-container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    .test-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    }
+    .test-btn:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      animation: fadeIn 0.3s;
+    }
+    .popup.show {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .popup-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 500px;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      animation: slideUp 0.3s;
+    }
+    .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #999;
+      line-height: 1;
+    }
+    .close-btn:hover {
+      color: #f44336;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #333;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border 0.3s;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    .submit-btn {
+      width: 100%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .submit-btn:hover {
+      background: var(--secondary);
+    }
+    .success-msg {
+      display: none;
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .status {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="test-container">
+    <h1 style="color: var(--primary); margin-bottom: 20px;">
+      <i class="fas fa-heartbeat"></i> AyuraWell
+    </h1>
+    <h2 style="margin-bottom: 30px;">Appointment Booking Test</h2>
+    
+    <button class="test-btn" onclick="openPopup()">
+      <i class="fas fa-calendar-check"></i> Book Appointment
+    </button>
+
+    <div class="status">
+      <h4>Test Status:</h4>
+      <p id="status-text">Click the button above to test the popup</p>
+    </div>
+
+    <div style="margin-top: 30px; text-align: left; color: #666;">
+      <h4>Test Checklist:</h4>
+      <p>✅ Button appears and is clickable</p>
+      <p id="check1">⏳ Popup opens on click</p>
+      <p id="check2">⏳ Form is visible and functional</p>
+      <p id="check3">⏳ Close button works</p>
+      <p id="check4">⏳ Form can be submitted</p>
+    </div>
+  </div>
+
+  <!-- Appointment Popup -->
+  <div id="appointmentPopup" class="popup" onclick="closePopup(event)">
+    <div class="popup-content" onclick="event.stopPropagation()">
+      <button class="close-btn" onclick="closePopup()">&times;</button>
+      
+      <h3 style="color: var(--primary); margin-bottom: 25px;">
+        <i class="fas fa-calendar-alt"></i> Book Your Appointment
+      </h3>
+
+      <form id="appointmentForm" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" class="form-control" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="form-group">
+          <label for="doctor">Select Doctor *</label>
+          <select id="doctor" class="form-control" required>
+            <option value="">Choose a doctor</option>
+            <option value="dr-meera">Dr. Meera Sharma - Ayurvedic Specialist</option>
+            <option value="dr-raj">Dr. Raj Patel - Physiotherapist</option>
+            <option value="dr-priya">Dr. Priya Kumar - Yoga Therapist</option>
+            <option value="dr-amit">Dr. Amit Singh - Nutritionist</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date *</label>
+          <input type="date" id="date" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Preferred Time *</label>
+          <select id="time" class="form-control" required>
+            <option value="">Select time</option>
+            <option value="09:00">09:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="14:00">02:00 PM</option>
+            <option value="15:00">03:00 PM</option>
+            <option value="16:00">04:00 PM</option>
+            <option value="17:00">05:00 PM</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for Visit</label>
+          <textarea id="reason" class="form-control" rows="3" placeholder="Brief description of your concern"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Submit Appointment
+        </button>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        <strong>✅ Success!</strong> Your appointment has been booked successfully!
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Set minimum date to today
+    document.getElementById('date').min = new Date().toISOString().split('T')[0];
+
+    function openPopup() {
+      document.getElementById('appointmentPopup').classList.add('show');
+      document.getElementById('status-text').innerHTML = '<strong style="color: green;">✅ Popup opened successfully!</strong>';
+      document.getElementById('check1').innerHTML = '✅ Popup opens on click';
+      document.getElementById('check2').innerHTML = '✅ Form is visible and functional';
+      console.log('✅ Popup opened');
+    }
+
+    function closePopup(event) {
+      if (!event || event.target.id === 'appointmentPopup' || event.type === 'click') {
+        document.getElementById('appointmentPopup').classList.remove('show');
+        document.getElementById('check3').innerHTML = '✅ Close button works';
+        console.log('✅ Popup closed');
+      }
+    }
+
+    function submitForm(event) {
+      event.preventDefault();
+      
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        doctor: document.getElementById('doctor').value,
+        date: document.getElementById('date').value,
+        time: document.getElementById('time').value,
+        reason: document.getElementById('reason').value
+      };
+
+      console.log('📋 Form Data:', formData);
+
+      // Show success message
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('status-text').innerHTML = '<strong style="color: green;">✅ Form submitted successfully!</strong><br>Check browser console (F12) to see the data.';
+      document.getElementById('check4').innerHTML = '✅ Form can be submitted';
+
+      // Hide form
+      document.getElementById('appointmentForm').style.display = 'none';
+
+      // Reset after 3 seconds
+      setTimeout(() => {
+        closePopup();
+        document.getElementById('appointmentForm').style.display = 'block';
+        document.getElementById('appointmentForm').reset();
+        document.getElementById('successMsg').style.display = 'none';
+      }, 3000);
+
+      console.log('✅ All tests passed!');
+    }
+
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closePopup({ target: { id: 'appointmentPopup' }});
+      }
+    });
+
+    console.log('🌿 AyuraWell Appointment Booking Test Ready!');
+    console.log('Click the "Book Appointment" button to test the popup.');
+  </script>
+
+</body>
+</html>
+

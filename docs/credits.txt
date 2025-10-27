@@ -1,0 +1,254 @@
+==================================
+AYURAWELL - CREDITS & ATTRIBUTION
+==================================
+
+TEMPLATE INFORMATION
+--------------------
+Template Name: AyuraWell - Health & Wellness HTML Template
+Version: 1.0.0
+Release Date: October 14, 2025
+Author: AyuraWell Team
+License: MIT License
+Website: www.ayurawell.in
+Email: contact@ayurawell.in
+
+
+THIRD-PARTY LIBRARIES
+---------------------
+
+1. Bootstrap 5.3.0
+   URL: https://getbootstrap.com
+   License: MIT License
+   Purpose: Responsive CSS framework
+
+2. jQuery 3.7.0
+   URL: https://jquery.com
+   License: MIT License
+   Purpose: JavaScript library for DOM manipulation
+
+3. Font Awesome 6.4.0
+   URL: https://fontawesome.com
+   License: Font Awesome Free License
+   Purpose: Icon library
+
+4. AOS (Animate On Scroll) 2.3.1
+   URL: https://michalsnik.github.io/aos
+   License: MIT License
+   Purpose: Scroll animations
+
+5. Owl Carousel 2.3.4
+   URL: https://owlcarousel2.github.io/OwlCarousel2
+   License: MIT License
+   Purpose: Touch-enabled carousel/slider
+
+6. Google Fonts
+   URL: https://fonts.google.com
+   License: SIL Open Font License
+   Fonts Used:
+   - Poppins (300, 400, 500, 600, 700)
+   - Lato (300, 400, 700)
+
+
+IMAGE SOURCES
+-------------
+
+All demo images are sourced from royalty-free image providers:
+
+1. Unsplash
+   URL: https://unsplash.com
+   License: Unsplash License (Free to use)
+   Purpose: High-quality stock photography
+
+2. Pexels
+   URL: https://pexels.com
+   License: Pexels License (Free to use)
+   Purpose: Stock photos and videos
+
+3. Pixabay
+   URL: https://pixabay.com
+   License: Pixabay License (Free for commercial use)
+   Purpose: Free images and vectors
+
+4. Lorem Picsum
+   URL: https://picsum.photos
+   License: CC0 (Public Domain)
+   Purpose: Placeholder images
+
+5. Pravatar
+   URL: https://pravatar.cc
+   License: Free to use
+   Purpose: Avatar placeholder generator
+
+
+INSPIRATION & REFERENCES
+-------------------------
+
+- Ayurvedic design principles
+- Indian healthcare aesthetics
+- Modern wellness center websites
+- Material Design guidelines
+- Accessibility best practices (WCAG 2.1)
+
+
+SPECIAL THANKS
+--------------
+
+- All open-source contributors
+- Bootstrap team
+- Font Awesome team
+- Google Fonts team
+- Unsplash, Pexels, and Pixabay photographers
+- Beta testers and early reviewers
+- The Indian wellness community
+
+
+COLOR PALETTE INSPIRATION
+--------------------------
+
+Primary Green (#4CAF50) - Inspired by:
+- Traditional Ayurvedic herbs
+- Natural healing
+- Growth and vitality
+- Indian cultural significance of green
+
+
+FONTS RATIONALE
+---------------
+
+Poppins:
+- Clean, modern sans-serif
+- Excellent readability
+- Works well for headings
+- Professional appearance
+
+Lato:
+- Warm, friendly sans-serif
+- Great for body text
+- Versatile and readable
+- Open-source and free
+
+
+CODE INSPIRATION
+----------------
+
+- Modern JavaScript ES6+ practices
+- CSS Grid and Flexbox techniques
+- Mobile-first responsive design
+- Progressive enhancement principles
+- Semantic HTML5 standards
+
+
+TESTING TOOLS
+-------------
+
+- Chrome DevTools
+- Firefox Developer Tools
+- Lighthouse (Performance & Accessibility)
+- W3C HTML Validator
+- W3C CSS Validator
+- BrowserStack (Cross-browser testing)
+- WAVE (Web Accessibility Evaluation Tool)
+
+
+DOCUMENTATION TOOLS
+-------------------
+
+- Markdown for README
+- Plain text for changelog
+- HTML for detailed documentation
+
+
+DEVELOPMENT ENVIRONMENT
+-----------------------
+
+- Visual Studio Code
+- Git for version control
+- NPM for package management
+- Browser developer tools
+- Responsive design testing tools
+
+
+LICENSE INFORMATION
+-------------------
+
+This template is released under the MIT License.
+
+You are free to:
+✓ Use commercially
+✓ Modify
+✓ Distribute
+✓ Use privately
+
+You must:
+✓ Include copyright notice
+✓ Include license text
+
+You cannot:
+✗ Hold the author liable
+✗ Use author's name for promotion without permission
+
+
+ATTRIBUTION REQUIREMENTS
+-------------------------
+
+While not required by the MIT License, we appreciate:
+- Link back to ayurawell.in
+- Credit in your project documentation
+- Sharing your project with us
+
+If you use this template, we'd love to see what you build!
+
+
+SUPPORT & CONTACT
+-----------------
+
+For questions, suggestions, or support:
+
+Email: contact@ayurawell.in
+Website: www.ayurawell.in
+Phone: +91 98765 43210
+
+Address:
+123 MG Road, Koramangala
+Bengaluru, Karnataka 560034
+India
+
+
+COMMUNITY
+---------
+
+Join our community:
+- Facebook: facebook.com/ayurawell
+- Instagram: instagram.com/ayurawell
+- Twitter: twitter.com/ayurawell
+- LinkedIn: linkedin.com/company/ayurawell
+
+
+FUTURE UPDATES
+--------------
+
+We're committed to regular updates and improvements.
+Check our website for:
+- New features
+- Bug fixes
+- Additional templates
+- Tutorial videos
+- Community showcases
+
+
+==================================
+
+Thank you for using AyuraWell!
+
+We hope this template helps you build
+an amazing health and wellness website.
+
+🌿 Your Health, Our Priority
+
+==================================
+
+Last Updated: October 14, 2025
+Version: 1.0.0
+
+==================================
+

@@ -1,0 +1,197 @@
+<!-- Dashboard Sidebar -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="sidebar-logo">
+      Ayura<span>Well</span>
+    </a>
+  </div>
+
+  <nav class="sidebar-nav">
+    <ul class="sidebar-menu">
+      <li>
+        <a href="dashboard.html" class="active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="appointments.html">
+          <i class="fas fa-calendar-alt"></i>
+          <span>My Appointments</span>
+        </a>
+      </li>
+      <li>
+        <a href="appointments.html#new">
+          <i class="fas fa-calendar-plus"></i>
+          <span>Book Appointment</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-file-medical"></i>
+          <span>Medical Records</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-prescription"></i>
+          <span>Prescriptions</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-notes-medical"></i>
+          <span>Lab Reports</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-credit-card"></i>
+          <span>Billing & Payments</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-user-md"></i>
+          <span>My Doctors</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-bell"></i>
+          <span>Notifications</span>
+          <span class="badge">3</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- Sidebar Styles -->
+<style>
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: var(--bg-primary);
+  border-right: 1px solid #e0e0e0;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: var(--transition);
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.sidebar-logo span {
+  color: var(--secondary-color);
+}
+
+.sidebar-nav {
+  padding: 1rem 0;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 0.875rem 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+  background: var(--bg-accent);
+  color: var(--primary-color);
+}
+
+.sidebar-menu li a i {
+  width: 24px;
+  font-size: 1.125rem;
+  margin-right: 0.75rem;
+}
+
+.sidebar-menu li a .badge {
+  margin-left: auto;
+  background: var(--danger);
+  color: var(--text-white);
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    left: -250px;
+  }
+  
+  .sidebar.active {
+    left: 0;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .sidebar-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+  }
+}
+</style>
+

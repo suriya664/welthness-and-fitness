@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyuraWell - Documentation</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <style>
+    body {
+      padding-top: 70px;
+      font-family: 'Lato', sans-serif;
+    }
+    .doc-sidebar {
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 250px;
+      height: calc(100vh - 70px);
+      background: #f8f9fa;
+      padding: 2rem 1rem;
+      overflow-y: auto;
+      border-right: 1px solid #e0e0e0;
+    }
+    .doc-content {
+      margin-left: 250px;
+      padding: 2rem;
+      max-width: 1000px;
+    }
+    .doc-sidebar a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-bottom: 0.25rem;
+    }
+    .doc-sidebar a:hover,
+    .doc-sidebar a.active {
+      background: #4CAF50;
+      color: white;
+    }
+    .code-block {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      overflow-x: auto;
+    }
+    .code-block code {
+      font-family: 'Courier New', monospace;
+      font-size: 0.9rem;
+    }
+    h2 {
+      color: #4CAF50;
+      margin-top: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #4CAF50;
+    }
+    h3 {
+      color: #2E7D32;
+      margin-top: 1.5rem;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .feature-item {
+      padding: 1rem;
+      background: #E8F5E9;
+      border-radius: 8px;
+      border-left: 4px solid #4CAF50;
+    }
+    .note {
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    .warning {
+      background: #f8d7da;
+      border: 1px solid #f44336;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+    @media (max-width: 768px) {
+      .doc-sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .doc-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container-fluid">
+      <nav class="navbar">
+        <a href="../pages/index.html" class="logo">Ayura<span>Well</span></a>
+        <div>
+          <a href="../pages/index.html" class="btn btn-primary btn-rounded">Back to Template</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="doc-sidebar">
+    <h5>Documentation</h5>
+    <nav>
+      <a href="#introduction" class="active">Introduction</a>
+      <a href="#installation">Installation</a>
+      <a href="#folder-structure">Folder Structure</a>
+      <a href="#features">Features</a>
+      <a href="#customization">Customization</a>
+      <a href="#components">Components</a>
+      <a href="#forms">Forms & AJAX</a>
+      <a href="#dark-mode">Dark Mode</a>
+      <a href="#rtl-support">RTL Support</a>
+      <a href="#deployment">Deployment</a>
+      <a href="#support">Support</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="doc-content">
+    
+    <!-- Introduction -->
+    <section id="introduction">
+      <h1>🌿 AyuraWell Documentation</h1>
+      <p class="lead">Welcome to the official documentation for AyuraWell - Health & Wellness HTML Template</p>
+      
+      <div class="feature-grid">
+        <div class="feature-item">
+          <i class="fas fa-mobile-alt fa-2x mb-2" style="color: #4CAF50;"></i>
+          <h6>Fully Responsive</h6>
+          <p>Works on all devices</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-moon fa-2x mb-2" style="color: #4CAF50;"></i>
+          <h6>Dark Mode</h6>
+          <p>Toggle-able theme</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-globe fa-2x mb-2" style="color: #4CAF50;"></i>
+          <h6>RTL Support</h6>
+          <p>Arabic & Hindi ready</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-rocket fa-2x mb-2" style="color: #4CAF50;"></i>
+          <h6>Fast Loading</h6>
+          <p>Optimized performance</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation">
+      <h2>📦 Installation</h2>
+      
+      <h3>1. Download the Template</h3>
+      <p>Extract the zip file to your desired location.</p>
+      
+      <h3>2. File Structure</h3>
+      <div class="code-block">
+        <code>
+health-template/<br>
+├── assets/<br>
+│   ├── css/<br>
+│   ├── js/<br>
+│   └── img/<br>
+├── pages/<br>
+├── partials/<br>
+├── docs/<br>
+└── README.md
+        </code>
+      </div>
+
+      <h3>3. Open in Browser</h3>
+      <p>Simply open <code>pages/index.html</code> in your web browser.</p>
+
+      <div class="note">
+        <strong><i class="fas fa-info-circle"></i> Note:</strong> No build process or npm installation required! This is a pure HTML/CSS/JS template.
+      </div>
+    </section>
+
+    <!-- Folder Structure -->
+    <section id="folder-structure">
+      <h2>📁 Folder Structure</h2>
+      
+      <h3>/assets/css/</h3>
+      <ul>
+        <li><strong>style.css</strong> - Main stylesheet with all base styles</li>
+        <li><strong>responsive.css</strong> - Media queries for responsive design</li>
+        <li><strong>dark.css</strong> - Dark mode specific styles</li>
+        <li><strong>rtl.css</strong> - Right-to-left language support</li>
+      </ul>
+
+      <h3>/assets/js/</h3>
+      <ul>
+        <li><strong>main.js</strong> - Core functionality (navigation, scroll, etc.)</li>
+        <li><strong>plugins.js</strong> - Third-party library configurations</li>
+        <li><strong>ajax.js</strong> - AJAX form handlers</li>
+      </ul>
+
+      <h3>/pages/</h3>
+      <p>Contains all HTML pages:</p>
+      <ul>
+        <li>index.html - Homepage</li>
+        <li>about.html - About us</li>
+        <li>services.html - Services listing</li>
+        <li>contact.html - Contact page</li>
+        <li>And 12+ more pages...</li>
+      </ul>
+
+      <h3>/partials/</h3>
+      <p>Reusable HTML components:</p>
+      <ul>
+        <li>header.html - Site header</li>
+        <li>footer.html - Site footer</li>
+        <li>modals.html - Modal dialogs</li>
+        <li>sidebar.html - Dashboard sidebar</li>
+        <li>preloader.html - Page loader</li>
+      </ul>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h2>✨ Features</h2>
+      
+      <h3>Design Features</h3>
+      <ul>
+        <li>Modern, clean design with mint green color scheme</li>
+        <li>Smooth animations and transitions</li>
+        <li>Rounded corners for soft aesthetic</li>
+        <li>Hover effects on cards and buttons</li>
+        <li>Sticky navigation header</li>
+      </ul>
+
+      <h3>Technical Features</h3>
+      <ul>
+        <li>HTML5 semantic markup</li>
+        <li>CSS3 with CSS variables</li>
+        <li>ES6 JavaScript</li>
+        <li>Bootstrap 5 grid system</li>
+        <li>Font Awesome 6 icons</li>
+        <li>AOS scroll animations</li>
+        <li>Owl Carousel sliders</li>
+      </ul>
+
+      <h3>Functionality</h3>
+      <ul>
+        <li>Appointment booking modal</li>
+        <li>Contact form with validation</li>
+        <li>Search functionality</li>
+        <li>Time slot selection</li>
+        <li>Toast notifications</li>
+        <li>Image lazy loading</li>
+        <li>Back to top button</li>
+      </ul>
+    </section>
+
+    <!-- Customization -->
+    <section id="customization">
+      <h2>🎨 Customization</h2>
+      
+      <h3>Change Primary Color</h3>
+      <div class="code-block">
+        <code>
+/* In assets/css/style.css */<br>
+:root {<br>
+  --primary-color: #4CAF50; /* Your color here */<br>
+  --secondary-color: #2E7D32;<br>
+  --accent-color: #81C784;<br>
+}
+        </code>
+      </div>
+
+      <h3>Update Logo</h3>
+      <div class="code-block">
+        <code>
+&lt;!-- In partials/header.html --&gt;<br>
+&lt;a href="index.html" class="logo"&gt;<br>
+  Your&lt;span&gt;Brand&lt;/span&gt;<br>
+&lt;/a&gt;
+        </code>
+      </div>
+
+      <h3>Modify Typography</h3>
+      <div class="code-block">
+        <code>
+/* In assets/css/style.css */<br>
+:root {<br>
+  --font-primary: 'YourFont', sans-serif;<br>
+  --font-secondary: 'YourFont2', sans-serif;<br>
+}
+        </code>
+      </div>
+
+      <h3>Add Custom Pages</h3>
+      <ol>
+        <li>Copy an existing page from <code>/pages/</code></li>
+        <li>Rename and modify content</li>
+        <li>Update navigation links in header</li>
+        <li>Add to sitemap</li>
+      </ol>
+    </section>
+
+    <!-- Components -->
+    <section id="components">
+      <h2>🧩 Components</h2>
+      
+      <h3>Service Cards</h3>
+      <div class="code-block">
+        <code>
+&lt;div class="service-card"&gt;<br>
+  &lt;div class="service-icon"&gt;<br>
+    &lt;i class="fas fa-heartbeat"&gt;&lt;/i&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;h3&gt;Service Title&lt;/h3&gt;<br>
+  &lt;p&gt;Service description&lt;/p&gt;<br>
+  &lt;a href="#" class="btn btn-secondary"&gt;Learn More&lt;/a&gt;<br>
+&lt;/div&gt;
+        </code>
+      </div>
+
+      <h3>Doctor Cards</h3>
+      <div class="code-block">
+        <code>
+&lt;div class="doctor-card"&gt;<br>
+  &lt;div class="doctor-image"&gt;<br>
+    &lt;img src="doctor.jpg" alt="Dr. Name"&gt;<br>
+    &lt;div class="doctor-social"&gt;<br>
+      &lt;a href="#"&gt;&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;<br>
+    &lt;/div&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;div class="doctor-info"&gt;<br>
+    &lt;h3&gt;Dr. Name&lt;/h3&gt;<br>
+    &lt;div class="doctor-speciality"&gt;Specialist&lt;/div&gt;<br>
+  &lt;/div&gt;<br>
+&lt;/div&gt;
+        </code>
+      </div>
+
+      <h3>Testimonial Cards</h3>
+      <div class="code-block">
+        <code>
+&lt;div class="testimonial-card"&gt;<br>
+  &lt;div class="testimonial-quote"&gt;&amp;ldquo;&lt;/div&gt;<br>
+  &lt;div class="testimonial-content"&gt;<br>
+    &lt;div class="testimonial-text"&gt;Review text...&lt;/div&gt;<br>
+    &lt;div class="testimonial-author"&gt;<br>
+      &lt;div class="testimonial-avatar"&gt;<br>
+        &lt;img src="avatar.jpg" alt="Name"&gt;<br>
+      &lt;/div&gt;<br>
+      &lt;div class="testimonial-info"&gt;<br>
+        &lt;h4&gt;Patient Name&lt;/h4&gt;<br>
+      &lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+  &lt;/div&gt;<br>
+&lt;/div&gt;
+        </code>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section id="forms">
+      <h2>📝 Forms & AJAX</h2>
+      
+      <h3>Contact Form Example</h3>
+      <div class="code-block">
+        <code>
+&lt;form id="contact-form"&gt;<br>
+  &lt;div class="form-group"&gt;<br>
+    &lt;label for="name"&gt;Name&lt;/label&gt;<br>
+    &lt;input type="text" id="name" name="name" class="form-control" required&gt;<br>
+  &lt;/div&gt;<br>
+  &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;<br>
+&lt;/form&gt;
+        </code>
+      </div>
+
+      <h3>Configure AJAX Endpoint</h3>
+      <div class="code-block">
+        <code>
+// In assets/js/ajax.js<br>
+ajaxRequest('YOUR_API_URL/contact.php', {<br>
+  method: 'POST',<br>
+  data: JSON.stringify(formData)<br>
+});
+        </code>
+      </div>
+
+      <div class="warning">
+        <strong><i class="fas fa-exclamation-triangle"></i> Important:</strong> You need to set up backend endpoints for forms to actually send data. The template includes frontend AJAX handlers only.
+      </div>
+    </section>
+
+    <!-- Dark Mode -->
+    <section id="dark-mode">
+      <h2>🌙 Dark Mode</h2>
+      
+      <h3>How It Works</h3>
+      <p>Dark mode is implemented using CSS variables and a toggle button. User preference is saved in localStorage.</p>
+      
+      <h3>Toggle Dark Mode</h3>
+      <div class="code-block">
+        <code>
+document.body.classList.toggle('dark-mode');
+        </code>
+      </div>
+
+      <h3>Customize Dark Mode Colors</h3>
+      <div class="code-block">
+        <code>
+/* In assets/css/dark.css */<br>
+body.dark-mode {<br>
+  --primary-color: #66BB6A;<br>
+  --bg-primary: #1E1E1E;<br>
+  --text-color: #E0E0E0;<br>
+}
+        </code>
+      </div>
+
+      <h3>Disable Dark Mode</h3>
+      <p>Remove or comment out the theme toggle button and dark.css link.</p>
+    </section>
+
+    <!-- RTL Support -->
+    <section id="rtl-support">
+      <h2>🌐 RTL Support</h2>
+      
+      <h3>Enable RTL</h3>
+      <div class="code-block">
+        <code>
+&lt;html lang="ar" dir="rtl"&gt;<br>
+&lt;head&gt;<br>
+  &lt;link rel="stylesheet" href="assets/css/rtl.css"&gt;<br>
+&lt;/head&gt;
+        </code>
+      </div>
+
+      <h3>Supported Languages</h3>
+      <ul>
+        <li>Arabic (ar)</li>
+        <li>Hindi (hi)</li>
+        <li>Urdu (ur)</li>
+        <li>Hebrew (he)</li>
+      </ul>
+
+      <h3>RTL Fonts</h3>
+      <p>Include RTL-specific fonts in your HTML:</p>
+      <div class="code-block">
+        <code>
+&lt;link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet"&gt;
+        </code>
+      </div>
+    </section>
+
+    <!-- Deployment -->
+    <section id="deployment">
+      <h2>🚀 Deployment</h2>
+      
+      <h3>GitHub Pages</h3>
+      <div class="code-block">
+        <code>
+git init<br>
+git add .<br>
+git commit -m "Initial commit"<br>
+git branch -M main<br>
+git remote add origin YOUR_REPO_URL<br>
+git push -u origin main
+        </code>
+      </div>
+      <p>Then enable GitHub Pages in repository settings.</p>
+
+      <h3>Netlify</h3>
+      <ol>
+        <li>Sign up at netlify.com</li>
+        <li>Drag and drop your folder</li>
+        <li>Your site is live!</li>
+      </ol>
+
+      <h3>Traditional Hosting</h3>
+      <ol>
+        <li>Upload all files via FTP</li>
+        <li>Ensure file permissions are correct</li>
+        <li>Update paths if needed</li>
+      </ol>
+    </section>
+
+    <!-- Support -->
+    <section id="support">
+      <h2>🤝 Support</h2>
+      
+      <h3>Contact Us</h3>
+      <ul>
+        <li><strong>Email:</strong> contact@ayurawell.in</li>
+        <li><strong>Phone:</strong> +91 98765 43210</li>
+        <li><strong>Website:</strong> www.ayurawell.in</li>
+      </ul>
+
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="../README.md">README.md</a> - Quick start guide</li>
+        <li><a href="changelog.txt">changelog.txt</a> - Version history</li>
+        <li><a href="credits.txt">credits.txt</a> - Third-party credits</li>
+      </ul>
+
+      <h3>Community</h3>
+      <p>Join our community for updates and support:</p>
+      <ul>
+        <li>Facebook: facebook.com/ayurawell</li>
+        <li>Instagram: instagram.com/ayurawell</li>
+        <li>Twitter: twitter.com/ayurawell</li>
+      </ul>
+    </section>
+
+    <hr class="my-5">
+    
+    <div class="text-center py-4">
+      <p class="lead">Thank you for using AyuraWell!</p>
+      <p>🌿 Your Health, Our Priority</p>
+      <a href="../pages/index.html" class="btn btn-primary btn-rounded">View Template</a>
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scroll for sidebar links
+    document.querySelectorAll('.doc-sidebar a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Update active state
+        document.querySelectorAll('.doc-sidebar a').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Smooth scroll
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>
+

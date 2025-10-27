@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AyuraWell - Your trusted partner in health and wellness. Ayurvedic treatments, Yoga, Physiotherapy, and modern healthcare services in India.">
+  <meta name="keywords" content="ayurveda, wellness, health, yoga, physiotherapy, spa, India, Bangalore">
+  <meta name="author" content="AyuraWell">
+  
+  <title>AyuraWell - Health & Wellness Center | Ayurvedic & Modern Healthcare</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/dark.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Ayura<span>Well</span></a>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="appointments.html" class="btn btn-primary btn-rounded">Book Appointment</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" aria-label="Toggle Dark Mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="hero-content">
+            <h1>Your Health, Our Priority</h1>
+            <p>Trusted Care for Indian Families - Experience the perfect blend of ancient Ayurveda and modern healthcare at AyuraWell.</p>
+            <div class="hero-buttons">
+              <a href="appointments.html" class="btn btn-primary btn-rounded">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+              </a>
+              <a href="services.html" class="btn btn-secondary btn-rounded">
+                <i class="fas fa-heartbeat"></i> Our Services
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop" alt="Healthcare Professional" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h4>Expert Doctors</h4>
+            <p>Highly qualified and experienced healthcare professionals</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h4>Ayurvedic Care</h4>
+            <p>Traditional healing with natural herbs and therapies</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4>24/7 Support</h4>
+            <p>Round-the-clock emergency and consultation services</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h4>Safe & Secure</h4>
+            <p>Your health data is protected with top security</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&h=600&fit=crop" alt="Ayurvedic Treatment" class="img-fluid" style="border-radius: var(--radius-lg);">
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="section-subtitle">About AyuraWell</div>
+          <h2>Welcome to AyuraWell Health & Wellness Center</h2>
+          <p>For over 15 years, AyuraWell has been serving Indian families with comprehensive healthcare that combines the wisdom of Ayurveda with modern medical practices.</p>
+          <p>Our state-of-the-art facility in Bengaluru offers Panchakarma therapies, yoga, physiotherapy, nutrition counseling, and holistic wellness programs designed for your complete wellbeing.</p>
+          <div class="row mt-4">
+            <div class="col-6">
+              <h3 class="counter" data-target="15000">0</h3>
+              <p>Happy Patients</p>
+            </div>
+            <div class="col-6">
+              <h3 class="counter" data-target="25">0</h3>
+              <p>Expert Doctors</p>
+            </div>
+          </div>
+          <a href="about.html" class="btn btn-primary btn-rounded mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-subtitle">What We Offer</div>
+        <h2>Our Services</h2>
+        <p>Comprehensive health and wellness solutions tailored to your needs</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Ayurveda Treatment</h3>
+            <p>Traditional Ayurvedic consultations, treatments, and personalized wellness plans based on your dosha.</p>
+            <a href="services.html#ayurveda" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Panchakarma Therapy</h3>
+            <p>Deep detoxification and rejuvenation through authentic five-step cleansing procedures.</p>
+            <a href="services.html#panchakarma" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-om"></i>
+            </div>
+            <h3>Yoga & Meditation</h3>
+            <p>Customized yoga sessions, pranayama, and meditation classes for mind-body balance.</p>
+            <a href="services.html#yoga" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-walking"></i>
+            </div>
+            <h3>Physiotherapy</h3>
+            <p>Advanced physiotherapy treatments for pain relief, rehabilitation, and mobility improvement.</p>
+            <a href="services.html#physiotherapy" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <h3>Nutrition Counseling</h3>
+            <p>Personalized diet plans and nutritional guidance for optimal health and wellness.</p>
+            <a href="services.html#nutrition" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-hot-tub"></i>
+            </div>
+            <h3>Spa & Massage</h3>
+            <p>Therapeutic massages and spa treatments for relaxation and stress relief.</p>
+            <a href="services.html#spa" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-subtitle">Meet Our Team</div>
+        <h2>Our Expert Doctors</h2>
+        <p>Experienced and certified healthcare professionals dedicated to your wellbeing</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Meera Sharma">
+              <div class="doctor-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Meera Sharma</h3>
+              <div class="doctor-speciality">Ayurvedic Specialist</div>
+              <p>15+ years experience in traditional Ayurveda</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Raj Patel">
+              <div class="doctor-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Raj Patel</h3>
+              <div class="doctor-speciality">Physiotherapist</div>
+              <p>Certified in sports injury rehabilitation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Priya Kumar">
+              <div class="doctor-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Priya Kumar</h3>
+              <div class="doctor-speciality">Yoga Therapist</div>
+              <p>Expert in therapeutic yoga and meditation</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="doctor-card">
+            <div class="doctor-image">
+              <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Dr. Amit Singh">
+              <div class="doctor-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="doctor-info">
+              <h3>Dr. Amit Singh</h3>
+              <div class="doctor-speciality">Nutritionist</div>
+              <p>Specialized in holistic diet planning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="doctors.html" class="btn btn-primary btn-rounded">View All Doctors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <div class="section-subtitle">Patient Reviews</div>
+        <h2>What Our Patients Say</h2>
+      </div>
+      <div class="owl-carousel testimonials-carousel">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              The Panchakarma therapy at AyuraWell completely transformed my health. The doctors are knowledgeable and caring. Highly recommended!
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/150?img=1" alt="Patient">
+              </div>
+              <div class="testimonial-info">
+                <h4>Rajesh Kumar</h4>
+                <div class="testimonial-role">Patient</div>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              I've been attending yoga classes here for 6 months. The instructors are excellent and the environment is very peaceful. My stress levels have reduced significantly.
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/150?img=5" alt="Patient">
+              </div>
+              <div class="testimonial-info">
+                <h4>Priya Desai</h4>
+                <div class="testimonial-role">Patient</div>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">&ldquo;</div>
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              After my knee injury, Dr. Raj's physiotherapy sessions helped me recover completely. Professional service and modern equipment!
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Patient">
+              </div>
+              <div class="testimonial-info">
+                <h4>Arjun Mehta</h4>
+                <div class="testimonial-role">Patient</div>
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); color: white;">
+    <div class="container text-center" data-aos="zoom-in">
+      <h2 style="color: white;">Ready to Start Your Wellness Journey?</h2>
+      <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem;">Book your appointment today and experience the AyuraWell difference</p>
+      <a href="appointments.html" class="btn btn-rounded mt-3" style="background: white; color: var(--primary-color);">
+        <i class="fas fa-calendar-check"></i> Book Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AyuraWell</h3>
+          <p>Your trusted partner in health and wellness. We provide comprehensive Ayurvedic and modern healthcare services to Indian families.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#ayurveda">Ayurveda Treatment</a></li>
+            <li><a href="services.html#panchakarma">Panchakarma Therapy</a></li>
+            <li><a href="services.html#yoga">Yoga & Meditation</a></li>
+            <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+            <li><a href="services.html#nutrition">Nutrition Counseling</a></li>
+            <li><a href="services.html#spa">Spa & Massage</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 MG Road, Koramangala<br>Bengaluru, Karnataka 560034<br>India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>contact@ayurawell.in</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 4:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AyuraWell. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Modals -->
+  <div id="appointment-modal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Book an Appointment</h3>
+          <button class="modal-close" data-dismiss="modal" aria-label="Close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="appointment-form" class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="patient-name">Full Name *</label>
+                  <input type="text" id="patient-name" name="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="patient-email">Email *</label>
+                  <input type="email" id="patient-email" name="email" class="form-control" placeholder="your@email.com" required>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="patient-phone">Phone Number *</label>
+                  <input type="tel" id="patient-phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="doctor-select">Select Doctor *</label>
+                  <select id="doctor-select" name="doctor" class="form-control" required>
+                    <option value="">Choose a doctor</option>
+                    <option value="dr-meera-sharma">Dr. Meera Sharma - Ayurvedic Specialist</option>
+                    <option value="dr-raj-patel">Dr. Raj Patel - Physiotherapist</option>
+                    <option value="dr-priya-kumar">Dr. Priya Kumar - Yoga Therapist</option>
+                    <option value="dr-amit-singh">Dr. Amit Singh - Nutritionist</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment-date">Preferred Date *</label>
+                  <input type="date" id="appointment-date" name="date" class="form-control" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="appointment-time">Preferred Time *</label>
+                  <select id="appointment-time" name="time" class="form-control" required>
+                    <option value="">Select time</option>
+                    <option value="09:00">09:00 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="14:00">02:00 PM</option>
+                    <option value="15:00">03:00 PM</option>
+                    <option value="16:00">04:00 PM</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="appointment-reason">Reason for Visit</label>
+              <textarea id="appointment-reason" name="reason" class="form-control" rows="3" placeholder="Brief description of your concern"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-rounded w-100">
+              <i class="fas fa-calendar-check"></i> Book Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/ajax.js"></script>
+
+  <!-- Modal Styles -->
+  <style>
+    .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;opacity:0;transition:opacity 0.3s ease;}
+    .modal.active{display:flex;opacity:1;}
+    .modal-dialog{max-width:600px;width:90%;max-height:90vh;overflow-y:auto;animation:slideDown 0.3s ease;}
+    .modal-content{background:var(--bg-primary);border-radius:var(--radius-md);box-shadow:var(--shadow-lg);}
+    .modal-header{padding:1.5rem 2rem;border-bottom:1px solid #e0e0e0;display:flex;justify-content:space-between;align-items:center;}
+    .modal-header h3{margin:0;}
+    .modal-close{font-size:2rem;background:none;border:none;cursor:pointer;color:var(--text-light);transition:var(--transition);line-height:1;}
+    .modal-close:hover{color:var(--danger);}
+    .modal-body{padding:2rem;}
+    .row{display:flex;flex-wrap:wrap;margin:0 -0.75rem;}
+    .col-md-6{flex:0 0 50%;max-width:50%;padding:0 0.75rem;}
+    @keyframes slideDown{from{transform:translateY(-50px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+    @media (max-width:768px){.col-md-6{flex:0 0 100%;max-width:100%;}}
+  </style>
+
+  <!-- Modal JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Open modal
+      document.querySelectorAll('[data-modal]').forEach(function(trigger) {
+        trigger.addEventListener('click', function(e) {
+          e.preventDefault();
+          const modalId = this.getAttribute('data-modal');
+          const modal = document.getElementById(modalId);
+          if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      // Close modal
+      document.querySelectorAll('.modal-close, [data-dismiss="modal"]').forEach(function(closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          const modal = this.closest('.modal');
+          if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      // Close on backdrop click
+      document.querySelectorAll('.modal').forEach(function(modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+
+      // Close on ESC key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.modal.active').forEach(function(modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+          });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+

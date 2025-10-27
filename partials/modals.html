@@ -1,0 +1,360 @@
+<!-- Appointment Booking Modal -->
+<div id="appointment-modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Book an Appointment</h3>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="appointment-form" class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="patient-name">Full Name *</label>
+                <input type="text" id="patient-name" name="name" class="form-control" placeholder="Enter your full name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="patient-email">Email *</label>
+                <input type="email" id="patient-email" name="email" class="form-control" placeholder="your@email.com" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="patient-phone">Phone Number *</label>
+                <input type="tel" id="patient-phone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="patient-age">Age</label>
+                <input type="number" id="patient-age" name="age" class="form-control" placeholder="Age" min="1" max="120">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="doctor-select">Select Doctor *</label>
+                <select id="doctor-select" name="doctor" class="form-control" required>
+                  <option value="">Choose a doctor</option>
+                  <option value="dr-meera-sharma">Dr. Meera Sharma - Ayurvedic Specialist</option>
+                  <option value="dr-raj-patel">Dr. Raj Patel - Physiotherapist</option>
+                  <option value="dr-priya-kumar">Dr. Priya Kumar - Yoga Therapist</option>
+                  <option value="dr-amit-singh">Dr. Amit Singh - Nutritionist</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="appointment-date">Preferred Date *</label>
+                <input type="date" id="appointment-date" name="date" class="form-control" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Select Time Slot *</label>
+            <div id="time-slots">
+              <div class="time-slots-grid">
+                <button type="button" class="time-slot" data-time="09:00 AM">09:00 AM</button>
+                <button type="button" class="time-slot" data-time="10:00 AM">10:00 AM</button>
+                <button type="button" class="time-slot" data-time="11:00 AM">11:00 AM</button>
+                <button type="button" class="time-slot" data-time="02:00 PM">02:00 PM</button>
+                <button type="button" class="time-slot" data-time="03:00 PM">03:00 PM</button>
+                <button type="button" class="time-slot" data-time="04:00 PM">04:00 PM</button>
+                <button type="button" class="time-slot" data-time="05:00 PM">05:00 PM</button>
+                <button type="button" class="time-slot" data-time="06:00 PM">06:00 PM</button>
+              </div>
+            </div>
+            <input type="hidden" id="selected-time" name="time" required>
+          </div>
+
+          <div class="form-group">
+            <label for="appointment-reason">Reason for Visit</label>
+            <textarea id="appointment-reason" name="reason" class="form-control" rows="3" placeholder="Brief description of your concern"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="terms" required>
+              I agree to the <a href="privacy-policy.html" target="_blank">Terms & Conditions</a>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-rounded w-100">
+            <i class="fas fa-calendar-check"></i> Book Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Login</h3>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="email" class="form-control" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" class="form-control" placeholder="Enter password" required>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="remember"> Remember me
+            </label>
+            <a href="#" class="float-right">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-rounded w-100">Login</button>
+          <p class="text-center mt-3">Don't have an account? <a href="register.html">Register</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div id="video-modal" class="modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-container">
+          <iframe id="video-iframe" width="100%" height="500" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification Container -->
+<div id="toast-container"></div>
+
+<!-- Modal Styles -->
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.modal-dialog {
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideDown 0.3s ease;
+}
+
+.modal-dialog.modal-sm {
+  max-width: 400px;
+}
+
+.modal-dialog.modal-lg {
+  max-width: 900px;
+}
+
+.modal-content {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-close {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: var(--transition);
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--danger);
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: right;
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.time-slot {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  background: var(--bg-primary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.time-slot:hover:not(.disabled) {
+  border-color: var(--primary-color);
+  background: var(--bg-accent);
+}
+
+.time-slot.selected {
+  background: var(--primary-color);
+  color: var(--text-white);
+  border-color: var(--primary-color);
+}
+
+.time-slot.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.75rem;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 0.75rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.float-right {
+  float: right;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Toast Notifications */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--success);
+  color: var(--text-white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  z-index: 10001;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  max-width: 400px;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.toast.toast-error {
+  background: var(--danger);
+}
+
+.toast.toast-warning {
+  background: var(--warning);
+}
+
+.toast.toast-info {
+  background: var(--info);
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 95%;
+  }
+  
+  .modal-header,
+  .modal-body {
+    padding: 1.5rem;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .time-slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+  
+  .toast {
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+  }
+}
+</style>
+

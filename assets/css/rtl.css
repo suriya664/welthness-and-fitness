@@ -1,0 +1,357 @@
+/* ========================================
+   AyuraWell - RTL (Right-to-Left) Stylesheet
+   For Arabic and Hindi Language Support
+   ======================================== */
+
+/* RTL Direction */
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ========== Typography ========== */
+body[dir="rtl"] h1,
+body[dir="rtl"] h2,
+body[dir="rtl"] h3,
+body[dir="rtl"] h4,
+body[dir="rtl"] h5,
+body[dir="rtl"] h6 {
+  text-align: right;
+}
+
+body[dir="rtl"] p {
+  text-align: right;
+}
+
+/* ========== Navigation ========== */
+body[dir="rtl"] .navbar {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .nav-menu {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .nav-menu li a::after {
+  right: 0;
+  left: auto;
+}
+
+/* ========== Hero Section ========== */
+body[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+body[dir="rtl"] .hero-buttons {
+  flex-direction: row-reverse;
+}
+
+/* ========== Section Titles ========== */
+body[dir="rtl"] .section-title {
+  text-align: center;
+}
+
+body[dir="rtl"] .section-title h2::after {
+  right: 50%;
+  left: auto;
+  transform: translateX(50%);
+}
+
+/* ========== Service Cards ========== */
+body[dir="rtl"] .service-card {
+  text-align: center;
+}
+
+/* ========== Doctor Cards ========== */
+body[dir="rtl"] .doctor-info {
+  text-align: center;
+}
+
+body[dir="rtl"] .doctor-social {
+  flex-direction: row-reverse;
+}
+
+/* ========== Pricing Cards ========== */
+body[dir="rtl"] .pricing-card {
+  text-align: center;
+}
+
+body[dir="rtl"] .pricing-features {
+  text-align: right;
+}
+
+body[dir="rtl"] .pricing-features li i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* ========== Testimonials ========== */
+body[dir="rtl"] .testimonial-quote {
+  right: 1.5rem;
+  left: auto;
+}
+
+body[dir="rtl"] .testimonial-author {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+body[dir="rtl"] .testimonial-text {
+  text-align: right;
+}
+
+/* ========== Forms ========== */
+body[dir="rtl"] .form-group label {
+  text-align: right;
+}
+
+body[dir="rtl"] .form-control {
+  text-align: right;
+}
+
+/* ========== Footer ========== */
+body[dir="rtl"] .footer-content {
+  text-align: right;
+}
+
+body[dir="rtl"] .footer-contact li {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+body[dir="rtl"] .footer-contact i {
+  margin-right: 0;
+  margin-left: 0.75rem;
+}
+
+body[dir="rtl"] .social-links {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .footer-bottom {
+  text-align: center;
+}
+
+/* ========== Buttons ========== */
+body[dir="rtl"] .btn {
+  text-align: center;
+}
+
+/* ========== Icons ========== */
+body[dir="rtl"] .fa,
+body[dir="rtl"] .fas,
+body[dir="rtl"] .far,
+body[dir="rtl"] .fab {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* ========== Lists ========== */
+body[dir="rtl"] ul,
+body[dir="rtl"] ol {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body[dir="rtl"] li {
+  text-align: right;
+}
+
+/* ========== Breadcrumbs ========== */
+body[dir="rtl"] .breadcrumb {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  content: "/";
+  float: left;
+}
+
+/* ========== Modals ========== */
+body[dir="rtl"] .modal-header {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .modal-body {
+  text-align: right;
+}
+
+body[dir="rtl"] .modal-footer {
+  flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .close {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* ========== Tables ========== */
+body[dir="rtl"] table {
+  text-align: right;
+}
+
+body[dir="rtl"] th,
+body[dir="rtl"] td {
+  text-align: right;
+}
+
+/* ========== Dashboard ========== */
+body[dir="rtl"] .sidebar {
+  right: 0;
+  left: auto;
+}
+
+body[dir="rtl"] .main-content {
+  margin-right: 250px;
+  margin-left: 0;
+}
+
+/* ========== Gallery ========== */
+body[dir="rtl"] .gallery-overlay {
+  text-align: center;
+}
+
+/* ========== Back to Top ========== */
+body[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 30px;
+}
+
+/* ========== Theme Toggle ========== */
+body[dir="rtl"] .theme-toggle {
+  right: auto;
+  left: 30px;
+}
+
+/* ========== Animations (RTL) ========== */
+@keyframes slideInRight-rtl {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft-rtl {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ========== Mobile Menu RTL ========== */
+@media (max-width: 768px) {
+  body[dir="rtl"] .nav-menu {
+    right: -100%;
+    left: auto;
+  }
+  
+  body[dir="rtl"] .nav-menu.active {
+    right: 0;
+  }
+  
+  body[dir="rtl"] .nav-toggle {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  body[dir="rtl"] .back-to-top {
+    left: 20px;
+    right: auto;
+  }
+  
+  body[dir="rtl"] .theme-toggle {
+    left: 20px;
+    right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  body[dir="rtl"] .back-to-top {
+    left: 15px;
+  }
+  
+  body[dir="rtl"] .theme-toggle {
+    left: 15px;
+  }
+}
+
+/* ========== RTL Specific Fonts ========== */
+body[dir="rtl"] {
+  font-family: 'Cairo', 'Tajawal', 'Amiri', var(--font-primary);
+}
+
+/* Arabic & Hindi Number Styling */
+body[dir="rtl"] .pricing-price,
+body[dir="rtl"] .counter,
+body[dir="rtl"] .number {
+  font-family: 'Cairo', 'Tajawal', sans-serif;
+}
+
+/* ========== Text Alignment Utilities RTL ========== */
+body[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+body[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+body[dir="rtl"] .text-center {
+  text-align: center !important;
+}
+
+/* ========== Float Utilities RTL ========== */
+body[dir="rtl"] .float-left {
+  float: right !important;
+}
+
+body[dir="rtl"] .float-right {
+  float: left !important;
+}
+
+/* ========== Margin & Padding RTL ========== */
+body[dir="rtl"] .mr-1 { margin-right: 0; margin-left: 0.25rem; }
+body[dir="rtl"] .mr-2 { margin-right: 0; margin-left: 0.5rem; }
+body[dir="rtl"] .mr-3 { margin-right: 0; margin-left: 1rem; }
+body[dir="rtl"] .mr-4 { margin-right: 0; margin-left: 1.5rem; }
+body[dir="rtl"] .mr-5 { margin-right: 0; margin-left: 3rem; }
+
+body[dir="rtl"] .ml-1 { margin-left: 0; margin-right: 0.25rem; }
+body[dir="rtl"] .ml-2 { margin-left: 0; margin-right: 0.5rem; }
+body[dir="rtl"] .ml-3 { margin-left: 0; margin-right: 1rem; }
+body[dir="rtl"] .ml-4 { margin-left: 0; margin-right: 1.5rem; }
+body[dir="rtl"] .ml-5 { margin-left: 0; margin-right: 3rem; }
+
+body[dir="rtl"] .pr-1 { padding-right: 0; padding-left: 0.25rem; }
+body[dir="rtl"] .pr-2 { padding-right: 0; padding-left: 0.5rem; }
+body[dir="rtl"] .pr-3 { padding-right: 0; padding-left: 1rem; }
+body[dir="rtl"] .pr-4 { padding-right: 0; padding-left: 1.5rem; }
+body[dir="rtl"] .pr-5 { padding-right: 0; padding-left: 3rem; }
+
+body[dir="rtl"] .pl-1 { padding-left: 0; padding-right: 0.25rem; }
+body[dir="rtl"] .pl-2 { padding-left: 0; padding-right: 0.5rem; }
+body[dir="rtl"] .pl-3 { padding-left: 0; padding-right: 1rem; }
+body[dir="rtl"] .pl-4 { padding-left: 0; padding-right: 1.5rem; }
+body[dir="rtl"] .pl-5 { padding-left: 0; padding-right: 3rem; }
+
+/* ========== Border RTL ========== */
+body[dir="rtl"] .border-left {
+  border-left: none !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+
+body[dir="rtl"] .border-right {
+  border-right: none !important;
+  border-left: 1px solid #dee2e6 !important;
+}
+
